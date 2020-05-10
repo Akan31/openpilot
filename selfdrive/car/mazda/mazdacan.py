@@ -30,7 +30,7 @@ def create_steering_control(packer, car_fingerprint, frame, apply_steer, lkas):
   csum = csum - ahi - amd - alo - b2
 
   if ahi == 1:
-    csum = csum - 15
+    csum = csum + 15
 
   if csum < 0:
     if csum < -256:
